@@ -829,7 +829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 604fd1e5546e360429349f0c1bc65a36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_scene: {fileID: 102900000, guid: dfe9bf249f82b5d498491c3a1478982e, type: 3}
+  m_sceneName: MainMenu
 --- !u!222 &1478202924105668916
 CanvasRenderer:
   m_ObjectHideFlags: 0
