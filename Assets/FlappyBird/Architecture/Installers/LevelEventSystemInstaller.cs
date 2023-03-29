@@ -4,7 +4,7 @@ using Architecture.LevelEvents;
 
 namespace Architecture.Installers
 {
-    public class LevelEventSystemInstaller : MonoInstaller
+    public sealed class LevelEventSystemInstaller : MonoInstaller
     {
         [SerializeField] private LevelEventSystem m_levelEventSystem;
         public override void InstallBindings()

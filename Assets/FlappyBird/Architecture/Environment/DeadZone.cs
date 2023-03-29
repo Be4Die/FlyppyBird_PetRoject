@@ -15,8 +15,10 @@ namespace Architecture.Environment
 
         private AudioSource m_audioSource;
         #endregion
+
         
-        private void Awake() {
+        private void Awake()
+        {
             m_audioSource = GetComponent<AudioSource>();
         }
 

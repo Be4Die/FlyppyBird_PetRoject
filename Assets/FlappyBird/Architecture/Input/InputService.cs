@@ -1,13 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Architecture.Input
 {
-    public class InputService : MonoBehaviour
+    public sealed class InputService : MonoBehaviour
     {
+        #region Variabels
         public InputActions InputActions { get => m_inputActions; }
         private InputActions m_inputActions;
+        #endregion
+
 
         private void Awake()
         {

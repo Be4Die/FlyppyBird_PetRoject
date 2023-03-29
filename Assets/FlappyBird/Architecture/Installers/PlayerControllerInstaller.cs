@@ -4,7 +4,7 @@ using Architecture.Player;
 
 namespace Architecture.Installers
 {
-    public class PlayerControllerInstaller : MonoInstaller
+    public sealed class PlayerControllerInstaller : MonoInstaller
     {
         [SerializeField] private PlayerController m_playerController;
     

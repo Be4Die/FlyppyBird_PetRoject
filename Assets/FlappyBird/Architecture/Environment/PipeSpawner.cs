@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Architecture.Utils;
 using Zenject;
@@ -25,6 +24,7 @@ namespace Architecture.Environment
         private bool m_isPause = false;
         [Inject] private DiContainer m_diContainer;
         #endregion
+
 
         private void Awake()
         {

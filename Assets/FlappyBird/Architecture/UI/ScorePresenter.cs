@@ -7,9 +7,13 @@ namespace Architecture.UI
 {
     public class ScorePresenter : MonoBehaviour
     {
+        #region Variabels
         [SerializeField] private TextMeshProUGUI m_text;
 
         [Inject] private PlayerScore m_score;
+        #endregion
+
+        
 
         private void OnEnable()
         {

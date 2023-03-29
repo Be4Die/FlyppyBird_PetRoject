@@ -4,7 +4,7 @@ using Zenject;
 
 namespace Architecture.Installers
 {
-    public class InputServiceInstaller : MonoInstaller
+    public sealed class InputServiceInstaller : MonoInstaller
     {
         [SerializeField] private InputService m_inputService;
         public override void InstallBindings()

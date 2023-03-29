@@ -4,7 +4,7 @@ using Architecture.Player;
 
 namespace Architecture.Installers
 {
-    public class PlayerScoreInstaller : MonoInstaller
+    public sealed class PlayerScoreInstaller : MonoInstaller
     {
         [SerializeField] private PlayerScore m_playerScore;
     

@@ -4,7 +4,7 @@ using Architecture.Environment;
 
 namespace Architecture.Installers
 {
-    public class PipeSpawnerInstaller : MonoInstaller
+    public sealed class PipeSpawnerInstaller : MonoInstaller
     {
         [SerializeField] private PipeSpawner m_pipeSpawner;
     

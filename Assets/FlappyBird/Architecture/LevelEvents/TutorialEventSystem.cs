@@ -8,12 +8,16 @@ using Architecture.Environment;
 
 namespace Architecture.LevelEvents
 {
-    public class Tutorial : MonoBehaviour
+    public sealed class TutorialEventSystem : MonoBehaviour
     {
+        #region Variabels
         [SerializeField] private Button m_interaction;
         [Inject] private PlayerController m_playerController;
         [Inject] private PipeSpawner m_pipeSpawner;
-        private void Awake()
+        #endregion
+
+
+        private void Start()
         {
             m_playerController.FreezMovement();
             m_pipeSpawner.Pause();

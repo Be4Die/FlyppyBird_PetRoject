@@ -26,6 +26,7 @@ namespace Architecture.UI
     ///</summary>
     public class GameOverPanelPresenter : MonoBehaviour
     {
+        #region Variabels
         public Button OkButton { get => m_okButton; }
         public Button ShareButton { get => m_shareButton; }
         public TextMeshProUGUI CurrentScoreText { get => m_currentScoreText; }
@@ -46,6 +47,7 @@ namespace Architecture.UI
         [Header("Buttons")]
         [SerializeField] private Button m_okButton;
         [SerializeField] private Button m_shareButton;
+        #endregion
 
         private void Awake() {
             Array.Sort<MedalSettings>(m_medals, (x,y) => x.Score.CompareTo(y.Score));

@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Architecture.Animations.Core;
 
-namespace Architecture.Utils
+namespace Architecture.Animations
 {
-    public class MovingEffect : MonoBehaviour
+    public sealed class LoopMovingAnimation: BaseAnimation
     {
         #region Variabels
         [SerializeField] private float m_lenght;
@@ -13,8 +12,12 @@ namespace Architecture.Utils
 
         private Sequence m_animation;
         #endregion
-    
-        private void Start()
+
+
+        public override void Play() => m_animation.Play();
+        public override void Stop() => m_animation.Pause();
+
+        protected override void SetUp()
         {
             var maxY = transform.position.y + m_lenght;
             var minY = transform.position.y -m_lenght;
@@ -26,7 +29,7 @@ namespace Architecture.Utils
             .Append(transform.DOMoveY(maxY, m_duration, true))
             .SetLoops(-1, LoopType.Restart);
         }
-
+        
         private void OnDestroy() {
             m_animation.Kill();
         }
